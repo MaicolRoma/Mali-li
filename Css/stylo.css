@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*cabecalo*/
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: #222267;
+    justify-content: center;
+    align-items: center;
+}
+/*Menu cabecalo*/
+.Menu-principal{
+    height: auto;
+    
+}
+.Menu-principal ul{
+    display: flex;
+    list-style: none;
+    
+}
+.Menu-principal ul li{
+   margin-left: 2em; 
+   margin-right: 1em;
+   
+}
+.Menu-principal ul li a{
+    text-decoration: none;
+    color: antiquewhite;    
+}
+
+/*SideBar*/
+.SideBar{
+    width: 100%;
+}
+.SideBar figure{
+    width: auto;
+}
+.SideBar figure img{
+    width: 100%;
+}
+/*Main*/
+
+
+
+/*footer*/
+footer{
+    padding-top: 1rem;
+    background-color: #222267;
+}
+.titulos-footer{
+    color: antiquewhite;
+    font-weight: bold;
+}
+.container-footer{
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+.columnas-footer{
+    display: grid;
+    gap: 9rem;
+    grid-template-rows: 1;
+    grid-template-columns: 4;
+    
+}
+footer .NossosParceiros{
+    grid-column: 1; 
+   }
+footer .NossosParceiros ul{
+    list-style: none;
+    
+}
+footer .NossosParceiros ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/*------------FAQs*/
+footer .FAQs{
+    grid-column: 2;
+}
+.FAQs ul{
+    list-style: none;
+}
+.FAQs ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/*-----Sobre nossa Loja*/
+.SobreaNossaLoja{
+    grid-column: 3;
+}
+.SobreaNossaLoja ul{
+    list-style: none;;
+}
+.SobreaNossaLoja ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/*Redes Sociais*/
+.RedesSociais{
+    grid-column: 4;
+}
+.RedesSociais ul{
+    display: flex;
+    list-style: none;
+}
+.RedesSociais ul li {
+    text-decoration: none;
+}
