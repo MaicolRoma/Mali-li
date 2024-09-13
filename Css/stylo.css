@@ -11,11 +11,15 @@ header{
     background-color: #222267;
     justify-content: center;
     align-items: center;
+    
+    
 }
 /*Menu cabecalo*/
 .Menu-principal{
     height: auto;
-    
+    font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;    
 }
 .Menu-principal ul{
     display: flex;
@@ -29,20 +33,158 @@ header{
 }
 .Menu-principal ul li a{
     text-decoration: none;
-    color: antiquewhite;    
+    color: antiquewhite;
+    font-size: larger; 
+    font-weight: bold;   
 }
 
 /*SideBar*/
 .SideBar{
     width: 100%;
+    
 }
 .SideBar figure{
     width: auto;
+    height: auto;
 }
 .SideBar figure img{
     width: 100%;
+    height: 575px;
+    object-fit: cover;
 }
 /*Main*/
+main{
+  /*background-image: url(/Mali-li/Imagens/fondos/—Pngtree—tropical\ plants\ vibrato\ steam\ wave_921722.jpg);*/
+  background-color: antiquewhite;
+}
+/*contenedor principal*/
+.Productos_Home{
+padding-top: 1rem;
+padding-bottom: 1rem;
+background-color: #fffff1;    
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 5;
+gap: 1rem;
+
+}
+/*Containers*/
+.container1_Productos_Home{
+    grid-column:1;
+    grid-row: 1;
+    
+}
+.container2_Productos_Home{
+    grid-column:2;
+    grid-row: 1;
+}
+
+.container3_Productos_Home{
+    grid-column:3;
+    grid-row: 1;
+}
+
+.container4_Productos_Home{
+    grid-column:4;
+    grid-row: 1;
+}
+.container5_Productos_Home{
+    grid-column:2;
+    grid-row: 2;
+}
+.container6_Productos_Home{
+    grid-column:1;
+    grid-row: 2;
+}
+.container7_Productos_Home{
+    grid-column:3;
+    grid-row: 2;
+}
+.container8_Productos_Home{
+    grid-column:4;
+    grid-row: 2;
+}
+.container9_Productos_Home{
+    grid-column:1;
+    grid-row: 3;
+}
+.container10_Productos_Home{
+    grid-column:2;
+    grid-row: 3;
+}
+.container11_Productos_Home{
+    grid-column:3;
+    grid-row: 3;
+}
+.container12_Productos_Home{
+    grid-column:4;
+    grid-row: 3;
+}
+.container13_Productos_Home{
+    grid-column:1;
+    grid-row: 4;
+}
+.container14_Productos_Home{
+    grid-column:2;
+    grid-row: 4;
+}
+.container15_Productos_Home{
+    grid-column:3;
+    grid-row: 4;
+}
+.container16_Productos_Home{
+    grid-column:4;
+    grid-row: 4;
+}
+.container17_Productos_Home{
+    grid-column:3;
+    grid-row: 5;
+}
+.container18_Productos_Home{
+    grid-column:4;
+    grid-row: 5;
+}
+.container19_Productos_Home{
+    grid-column:1;
+    grid-row: 5;
+}
+.container20_Productos_Home{
+    grid-column:2;
+    grid-row: 5;
+}
+.article_Home{
+    width: auto;
+}
+.container_Imagen_Producto_Home{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.Imagen_Producto_Home{
+    width: 300px;
+    height: 290px;
+    object-fit: fill;
+}
+
+/*------anuncio_Producto--------*/
+
+
+.nombre_Producto_Home{
+text-align: center;
+color:black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.precioProducto_Home{
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.verProducto_Home{
+    padding:  0 1rem 0 1rem;
+    margin-left: 2px;
+}
 
 
 
@@ -50,6 +192,9 @@ header{
 footer{
     padding-top: 1rem;
     background-color: #222267;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .titulos-footer{
     color: antiquewhite;
@@ -62,9 +207,10 @@ footer{
 
 .columnas-footer{
     display: grid;
-    gap: 9rem;
-    grid-template-rows: 1;
-    grid-template-columns: 4;
+    column-gap: 5rem;
+    row-gap: 1rem;
+    grid-template-rows: 4;
+    grid-template-columns: 5;
     
 }
 footer .NossosParceiros{
@@ -103,14 +249,74 @@ footer .FAQs{
     color: antiquewhite;
 }
 
-/*Redes Sociais*/
-.RedesSociais{
+/*Localize-nos*/
+.localize-nos{
     grid-column: 4;
+    grid-row: 1;
+    
 }
-.RedesSociais ul{
+
+
+
+/*Redes Sociais*/
+.Red-social{
+    grid-column:1/span 5;
+    grid-row: 2/span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+   
+   
+}
+.Red-social ul{
     display: flex;
     list-style: none;
 }
-.RedesSociais ul li {
+.Red-social ul li {
     text-decoration: none;
+    margin-right: 1rem;
+}
+
+/*Mapa e Contactos*/
+.localizenos-Contacto{
+    grid-column: 5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.Contacto{
+    color: white;
+    font-size: large;
+   
+}
+.Contacto  address a{
+    text-decoration: none;
+    color: beige;
+}
+.titulo-Localize-nos{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    margin-right: 3rem;
+    padding-bottom: 2px;
+}
+.titulo-Contacto{
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+}
+
+
+
+
+.Dereitos{
+    grid-column: 1/span 5;
+    grid-template-rows: 4;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3px;
 }
